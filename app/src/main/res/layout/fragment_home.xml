@@ -27,11 +27,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
         android:text="Good morning Terry!"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+
+
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="33dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
