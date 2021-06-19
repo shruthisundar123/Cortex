@@ -160,16 +160,11 @@
             android:textStyle="bold"
             android:textSize="16dp"
 
-            /><![CDATA[
-
-        />
-
-    ]]>
-    ]]>
     </LinearLayout>
 
     <!-- Notif 3-->
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="97dp"
         android:layout_marginStart="32dp"
@@ -204,11 +199,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Final Paper for Art History"
-            android:translationX="-197dp"
-            android:translationY="14dp"
             android:textColor="#4E4A64"
             android:textSize="14dp"
-            />
+            android:translationX="-197dp"
+            android:translationY="14dp" />
 
         <TextView
             android:id="@+id/duetime"
@@ -216,18 +210,71 @@
             android:layout_height="20dp"
             android:layout_marginTop="16dp"
             android:text="Due in 11 hours"
+            android:textColor="#6246EA"
+            android:textSize="16dp"
+            android:textStyle="bold"
             android:translationX="-125dp"
             android:translationY="30dp"
-            android:textColor="#6246EA"
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="154dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="100dp"
+
+        android:background="@color/light_purple"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0">
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="Edit Study Plan"
+            android:textColor="#4E4A64"
+            android:textSize="14dp"
             android:textStyle="bold"
-            android:textSize="16dp"
 
-            /><![CDATA[
 
-        />
+            />
 
-    ]]>
-        ]]>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-155dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/textView4">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:src="@android:drawable/ic_input_add"
+                android:tint="@color/lavendar"
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
