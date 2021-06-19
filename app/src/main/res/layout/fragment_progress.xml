@@ -6,57 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.ProgressFragment">
 
-<!--    <ScrollView
-        android:layout_width="404dp"
-        android:layout_height="636dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="165dp"
-            android:layout_height="278dp"
-            android:orientation="horizontal">
-            android:gravity="center_vertical"
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="16dp"
-                android:src="@drawable/ic_dashboard_black_24dp" />
-
-            <LinearLayout
-                android:layout_width="197dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="19dp"
-                android:orientation="vertical">
-
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="48dp"
-                    tools:src="@tools:sample/avatars" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            android:gravity="center_horizontal"
-
-        </LinearLayout>
-
-
-    </ScrollView> -->
-
     <ScrollView
         android:layout_width="347dp"
         android:layout_height="550dp"
@@ -65,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- all the peers -->
+        <!-- all the progress images -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,95 +23,71 @@
 
             <!-- Buddy -->
             <LinearLayout
-                android:layout_width="347dp"
+                android:layout_width="165dp"
                 android:layout_height="278dp"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/progress1"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="1dp"
-                    android:background="@drawable/customborder"
+                    android:gravity="center"
                     android:src="@drawable/ic_dashboard_black_24dp" />
 
                 <LinearLayout
-                    android:layout_width="197dp"
-                    android:layout_height="200dp"
+                    android:layout_width="167dp"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="-1dp"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/progress2"
-                        android:layout_width="165dp"
-                        android:layout_height="200dp"
-                        android:layout_marginLeft="12dp"
-                        android:background="@drawable/customborder"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
-
                     <TextView
-                        android:id="@+id/buddyGoal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/progress1Name"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
                         android:layout_marginBottom="12dp"
-                        android:text="MCAT Studying 2021" />
+                        android:gravity="center"
+                        android:text="Mine" />
+
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
             </LinearLayout>
 
-            <!-- Leslie -->
+
+            <!-- Third -->
             <LinearLayout
-                android:layout_width="347dp"
+                android:layout_width="165dp"
                 android:layout_height="278dp"
                 android:layout_marginTop="30dp"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/progress3"
-                    android:layout_width="165dp"
+                    android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:background="@drawable/customborder"
-                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
                     android:src="@drawable/ic_dashboard_black_24dp" />
 
                 <LinearLayout
                     android:layout_width="197dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="12dp"
+                    android:layout_marginLeft="1dp"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/progress4"
-                        android:layout_width="165dp"
-                        android:layout_height="200dp"
-                        android:layout_marginLeft="1dp"
-                        android:background="@drawable/customborder"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
-
                     <TextView
-                        android:id="@+id/leslieGoal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Self learning product design!" />
+                        android:id="@+id/progress3Name"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="Name" />
 
-                    <Button
-                        android:id="@+id/leslieTasks"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="View Tasks"
-                        android:textColor="@color/black"
-                        app:backgroundTint="@color/white" />
+
                 </LinearLayout>
             </LinearLayout>
 
