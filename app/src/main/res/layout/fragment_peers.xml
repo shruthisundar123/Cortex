@@ -70,116 +70,261 @@
     </ScrollView> -->
 
     <ScrollView
-        android:layout_width="404dp"
-        android:layout_height="636dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="347dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- all the peers -->
         <LinearLayout
-            android:layout_width="347dp"
-            android:layout_height="100dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="16dp"
-                android:src="@mipmap/ic_baldhead" />
-
+            <!-- Buddy -->
             <LinearLayout
-                android:layout_width="197dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="19dp"
-                android:orientation="vertical">
+                android:layout_width="347dp"
+                android:layout_height="115dp"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Buddy Pena"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/buddy"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_baldhead" />
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="MCAT Studying 2021" />
+                <LinearLayout
+                    android:layout_width="197dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="19dp"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="View Tasks"
-                    android:textColor="@color/black"
-                    app:backgroundTint="@color/white" />
+                    <TextView
+                        android:id="@+id/buddyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Buddy Pena"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/buddyGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="MCAT Studying 2021" />
+
+                    <Button
+                        android:id="@+id/buddyTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="View Tasks"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Leslie -->
+            <LinearLayout
+                android:layout_width="347dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/leslie"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_leslie" />
+
+                <LinearLayout
+                    android:layout_width="197dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="19dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/leslieName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leslie Alexander"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/leslieGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Self learning product design!" />
+
+                    <Button
+                        android:id="@+id/leslieTasks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="View Tasks"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Spike -->
+            <LinearLayout
+                android:layout_width="347dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/spike"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_spike" />
+
+                <LinearLayout
+                    android:layout_width="197dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="19dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spikeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spike Valentina"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/spikeGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Attending a Coding Bootcamp" />
+
+                    <Button
+                        android:id="@+id/spikeTasks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="View Tasks"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Brooklyn -->
+            <LinearLayout
+                android:layout_width="347dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/brooklyn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_brooklyn" />
+
+                <LinearLayout
+                    android:layout_width="197dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="19dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/brooklynName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brooklyn Simmons"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/brooklynGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Creating a cafe" />
+
+                    <Button
+                        android:id="@+id/brooklynTasks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="View Tasks"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Person5 -->
+            <LinearLayout
+                android:layout_width="347dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/person5"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_baldhead" />
+
+                <LinearLayout
+                    android:layout_width="197dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="19dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/person5Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brooklyn Simmons"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/person5Goal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Creating a cafe" />
+
+                    <Button
+                        android:id="@+id/person5Tasks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="View Tasks"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white" />
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="347dp"
-            android:layout_height="100dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
-
-            <ImageView
-                android:id="@+id/leslie"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="16dp"
-                android:src="@mipmap/ic_baldhead" />
-
-            <LinearLayout
-                android:layout_width="197dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="19dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/leslieName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Leslie Alexander"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/leslieGoal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="Self learning product design!" />
-
-                <Button
-                    android:id="@+id/leslieTasks"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="View Tasks"
-                    android:textColor="@color/black"
-                    app:backgroundTint="@color/white" />
-            </LinearLayout>
-
-        </LinearLayout>
-
     </ScrollView>
-
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
