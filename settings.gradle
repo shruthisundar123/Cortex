@@ -1,0 +1,2 @@
+rootProject.name = "Productivity Bot"
+include ':app'
