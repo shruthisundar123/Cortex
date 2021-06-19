@@ -27,7 +27,7 @@ public class ProgressFragment extends Fragment {
         binding = FragmentProgressBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textProgress;
+        final TextView textView = binding.textView;
         progressViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
