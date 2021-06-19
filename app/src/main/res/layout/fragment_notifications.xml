@@ -19,4 +19,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_play"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="161dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
