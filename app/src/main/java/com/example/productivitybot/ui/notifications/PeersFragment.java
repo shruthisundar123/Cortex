@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.productivitybot.R;
 import com.example.productivitybot.databinding.FragmentPeersBinding;
@@ -28,13 +29,14 @@ public class PeersFragment extends Fragment {
         binding = FragmentPeersBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        /*final TextView textView = binding.textPeers;
-        peersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        binding.spikeTasks.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View view) {
+                NavHostFragment.findNavController(PeersFragment.this)
+                        .navigate(R.id.action_peersFragment_to_peerInfo);
             }
-        }); */
+        });
+
         return root;
     }
 
