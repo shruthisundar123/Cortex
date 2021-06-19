@@ -7,89 +7,193 @@
     tools:context=".ui.dashboard.ProgressFragment">
 
     <ScrollView
-        android:layout_width="347dp"
-        android:layout_height="550dp"
+        android:layout_width="410dp"
+        android:layout_height="542dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <!-- all the progress images -->
+
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="16dp">
 
-            <!-- Buddy -->
             <LinearLayout
-                android:layout_width="165dp"
-                android:layout_height="278dp"
-                android:gravity="center_vertical"
-                android:background="@drawable/customborder"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/progress1"
-                    android:layout_width="150dp"
-                    android:layout_height="200dp"
-                    android:gravity="center"
-                    android:src="@drawable/ic_dashboard_black_24dp" />
-
+                <!-- Buddy -->
                 <LinearLayout
-                    android:layout_width="167dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="-1dp"
+                    android:layout_width="175dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/progress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_dashboard_black_24dp" />
 
                     <TextView
                         android:id="@+id/progress1Name"
-                        android:layout_width="150dp"
+                        android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginBottom="12dp"
                         android:gravity="center"
                         android:text="Mine" />
-
-
                 </LinearLayout>
 
-            </LinearLayout>
-
-
-            <!-- Third -->
-            <LinearLayout
-                android:layout_width="165dp"
-                android:layout_height="278dp"
-                android:layout_marginTop="30dp"
-                android:gravity="center_vertical"
-                android:background="@drawable/customborder"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/progress3"
-                    android:layout_width="150dp"
-                    android:layout_height="200dp"
-                    android:background="@drawable/customborder"
-                    android:gravity="center"
-                    android:src="@drawable/ic_dashboard_black_24dp" />
-
                 <LinearLayout
-                    android:layout_width="197dp"
-                    android:layout_height="200dp"
-                    android:layout_marginLeft="1dp"
+                    android:layout_width="175dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
 
+                    <ImageView
+                        android:id="@+id/progress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_dashboard_black_24dp" />
+
                     <TextView
-                        android:id="@+id/progress3Name"
-                        android:layout_width="150dp"
+                        android:id="@+id/progress2Name"
+                        android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginBottom="12dp"
                         android:gravity="center"
-                        android:text="Name" />
-
-
+                        android:text="Spike" />
                 </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- Buddy -->
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/progress5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_dashboard_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/progress5Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="Brooklyn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/progress6"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_dashboard_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/progress6Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="Leslie" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <!-- Buddy -->
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/progress7"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_dashboard_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/progress7Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="Mine" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/progress8"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_dashboard_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/progress8Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="Spike" />
+                </LinearLayout>
+            </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>

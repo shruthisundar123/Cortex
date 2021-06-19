@@ -18,7 +18,7 @@
         android:title="@string/title_peers" />
     <item
         android:id="@+id/navigation_progress"
-        android:icon="@drawable/ic_launcher_foreground"
-        android:title="Progress" />
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="Spaces" />
 
 </menu>
