@@ -28,13 +28,13 @@ public class PeersFragment extends Fragment {
         binding = FragmentPeersBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textPeers;
+        /*final TextView textView = binding.textPeers;
         peersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        }); */
         return root;
     }
 
