@@ -1,4 +1,4 @@
-package com.example.productivitybot.ui;
+package com.example.productivitybot;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

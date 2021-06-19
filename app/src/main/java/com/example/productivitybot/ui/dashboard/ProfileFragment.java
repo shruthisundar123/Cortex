@@ -1,4 +1,4 @@
-package com.example.productivitybot.ui;
+package com.example.productivitybot.ui.dashboard;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,24 +12,24 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.productivitybot.databinding.FragmentProgressBinding;
-import com.example.productivitybot.ui.ProgressViewModel;
+import com.example.productivitybot.R;
+import com.example.productivitybot.databinding.FragmentProfileBinding;
 
-public class ProgressFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 
-    private ProgressViewModel progressViewModel;
-    private FragmentProgressBinding binding;
+    private ProfileViewModel profileViewModel;
+    private FragmentProfileBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        progressViewModel =
-                new ViewModelProvider(this).get(ProgressViewModel.class);
+        profileViewModel =
+                new ViewModelProvider(this).get(ProfileViewModel.class);
 
-        binding = FragmentProgressBinding.inflate(inflater, container, false);
+        binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textProgress;
-        progressViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textProfile;
+        profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

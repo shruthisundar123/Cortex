@@ -12,20 +12,20 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.productivitybot.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:id="@+id/navigation_profile"
+        android:name="com.example.productivitybot.ui.dashboard.ProfileFragment"
+        android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.productivitybot.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:id="@+id/navigation_peers"
+        android:name="com.example.productivitybot.ui.notifications.PeersFragment"
+        android:label="@string/title_peers"
         tools:layout="@layout/fragment_peers" />
 
     <fragment
         android:id="@+id/navigation_progress"
-        android:name="com.example.productivitybot.ui.ProgressFragment"
+        android:name="com.example.productivitybot.ProgressFragment"
         android:label="@string/title_progress"
         tools:layout="@layout/fragment_peers" />
 

@@ -1,4 +1,4 @@
-package com.example.productivitybot.ui.dashboard;
+package com.example.productivitybot.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,23 +13,23 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.productivitybot.R;
-import com.example.productivitybot.databinding.FragmentDashboardBinding;
+import com.example.productivitybot.databinding.FragmentPeersBinding;
 
-public class DashboardFragment extends Fragment {
+public class PeersFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
-    private FragmentDashboardBinding binding;
+    private PeersViewModel peersViewModel;
+    private FragmentPeersBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        peersViewModel =
+                new ViewModelProvider(this).get(PeersViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentPeersBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textPeers;
+        peersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
