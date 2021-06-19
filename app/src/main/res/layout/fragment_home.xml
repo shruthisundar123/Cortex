@@ -220,6 +220,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="154dp"
         android:layout_height="54dp"
         android:layout_marginStart="124dp"
@@ -227,8 +228,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="124dp"
         android:layout_marginRight="124dp"
-        android:layout_marginBottom="100dp"
 
+        android:layout_marginBottom="100dp"
         android:background="@color/light_purple"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -276,6 +277,21 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="649dp" >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="41dp"
+            android:layout_height="36dp"
+            android:background="@color/purple_500"
+            android:src="@drawable/ic_home_black_24dp"
+            android:tint="@color/white" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </LinearLayout>
