@@ -159,20 +159,79 @@
             android:textColor="#6246EA"
             android:textStyle="bold"
             android:textSize="16dp"
-            android:textFontWeight=""
-            />
+
+            /><![CDATA[
 
         />
 
+    ]]>
+    ]]>
+    </LinearLayout>
+
+    <!-- Notif 3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- Research -->
+        <TextView
+            android:id="@+id/preResearch"
+            android:layout_width="197dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Preliminary Research"
+            android:textColor="#4E4A64"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/advmaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Final Paper for Art History"
+            android:translationX="-197dp"
+            android:translationY="14dp"
+            android:textColor="#4E4A64"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/duetime"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Due in 11 hours"
+            android:translationX="-125dp"
+            android:translationY="30dp"
+            android:textColor="#6246EA"
+            android:textStyle="bold"
+            android:textSize="16dp"
+
+            /><![CDATA[
+
+        />
 
     ]]>
+        ]]>
     </LinearLayout>
 
 
 </LinearLayout>
-
-
-        </LinearLayout>
 
 
     </LinearLayout>
