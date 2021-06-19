@@ -48,7 +48,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:gravity="center"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
+                        android:src="@drawable/room" />
 
                     <TextView
                         android:id="@+id/progress1Name"
@@ -72,7 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:gravity="center"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
+                        android:src="@drawable/onemore" />
 
                     <TextView
                         android:id="@+id/progress2Name"
@@ -103,7 +103,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:gravity="center"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
+                        android:src="@drawable/moreroom" />
 
                     <TextView
                         android:id="@+id/progress5Name"
@@ -127,7 +127,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:gravity="center"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
+                        android:src="@drawable/bigger" />
 
                     <TextView
                         android:id="@+id/progress6Name"
@@ -158,7 +158,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:gravity="center"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
+                        android:src="@drawable/room" />
 
                     <TextView
                         android:id="@+id/progress7Name"
@@ -182,7 +182,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:gravity="center"
-                        android:src="@drawable/ic_dashboard_black_24dp" />
+                        android:src="@drawable/onemore" />
 
                     <TextView
                         android:id="@+id/progress8Name"
