@@ -32,8 +32,9 @@ public class PeersFragment extends Fragment {
         binding.spikeTasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Navigation.findNavController(view).navigate(R.id.action_peersFragment_to_peerInfo)
                 NavHostFragment.findNavController(PeersFragment.this)
-                        .navigate(R.id.action_peersFragment_to_peerInfo);
+                       .navigate(R.id.action_peersFragment_to_peerInfo);
             }
         });
 

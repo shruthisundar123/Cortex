@@ -7,297 +7,220 @@
     tools:context=".ui.home.HomeFragment">
 
     <!-- Greeting for home  -->
-    <TextView
-        android:id="@+id/greeting"
-        android:layout_width="347dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="584dp"
-        android:fontFamily="@font/ubuntu"
-        android:text="Good morning, Terry! Our focus today is..."
-        android:textColor="#4E4A64"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="347dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Good morning, Terry! Our focus today is..."
+            android:textColor="#4E4A64"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="347dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/purple"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="272dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Macbeth Reading Act 1"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Term Paper 1 for English A"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="You've maintained a streak for 3 days for this assignment! Keep going! :)"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Due in 2 days"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/terryMan"
+                android:layout_width="72dp"
+                android:layout_height="186dp"
+                android:src="@drawable/ic__terryman" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/customborder"
+            android:orientation="horizontal">
+
+            <!-- Workbook ch 1 -->
+
+            <TextView
+                android:id="@+id/chapter1"
+                android:layout_width="197dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Workbook Chapter 1"
+                android:textColor="#4E4A64"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/advmaths1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Advanced Maths"
+                android:textColor="#4E4A64"
+                android:textSize="14dp"
+                android:translationX="-197dp"
+                android:translationY="14dp" />
+
+            <TextView
+                android:id="@+id/duetime1"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:text="Due in 11 hours"
+                android:textColor="#6246EA"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:translationX="-125dp"
+                android:translationY="30dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/customborder"
+            android:orientation="horizontal">
+
+            <!-- Research -->
+            <TextView
+                android:id="@+id/preResearch"
+                android:layout_width="197dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Preliminary Research"
+                android:textColor="#4E4A64"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/advmaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Final Paper for Art History"
+                android:textColor="#4E4A64"
+                android:textSize="14dp"
+                android:translationX="-197dp"
+                android:translationY="14dp" />
+
+            <TextView
+                android:id="@+id/duetime"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:text="Due in 11 hours"
+                android:translationX="-125dp"
+                android:translationY="30dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:text="Button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
     <!-- Button holder  -->
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="347dp"
-        android:layout_height="170dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="398dp"
-        android:background="@color/purple"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/greeting">
-
-        <LinearLayout
-            android:layout_width="272dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:text="Macbeth Reading Act 1"
-                android:textColor="@color/white"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Term Paper 1 for English A"
-                android:textColor="@color/white"
-                android:textSize="14dp" />
-
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:text="You've maintained a streak for 3 days for this assignment! Keep going! :)"
-                android:textColor="@color/white"
-                android:textSize="14dp" />
-
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:text="Due in 2 days"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/terryMan"
-            android:layout_width="72dp"
-            android:layout_height="186dp"
-            android:src="@drawable/ic__terryman" />
-
-
-    </LinearLayout>
-
     <!-- Notif 2-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="97dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="285dp"
-        android:background="@drawable/customborder"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <!-- Workbook ch 1 -->
-
-        <TextView
-            android:id="@+id/chapter1"
-            android:layout_width="197dp"
-            android:layout_height="20dp"
-            android:fontFamily="@font/ubuntu"
-            android:text="Workbook Chapter 1"
-            android:textColor="#4E4A64"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/advmaths"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Advanced Maths"
-            android:translationX="-197dp"
-            android:translationY="14dp"
-            android:textColor="#4E4A64"
-            android:textSize="14dp"
-            />
-
-        <TextView
-            android:id="@+id/duetime"
-            android:layout_width="150dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="16dp"
-            android:text="Due in 11 hours"
-            android:translationX="-125dp"
-            android:translationY="30dp"
-            android:textColor="#6246EA"
-            android:textStyle="bold"
-            android:textSize="16dp"
-
-    </LinearLayout>
 
     <!-- Notif 3-->
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="97dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="172dp"
-        android:background="@drawable/customborder"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="1.0">
-
-        <!-- Research -->
-        <TextView
-            android:id="@+id/preResearch"
-            android:layout_width="197dp"
-            android:layout_height="20dp"
-            android:fontFamily="@font/ubuntu"
-            android:text="Preliminary Research"
-            android:textColor="#4E4A64"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/advmaths"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Final Paper for Art History"
-            android:textColor="#4E4A64"
-            android:textSize="14dp"
-            android:translationX="-197dp"
-            android:translationY="14dp" />
-
-        <TextView
-            android:id="@+id/duetime"
-            android:layout_width="150dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="16dp"
-            android:text="Due in 11 hours"
-            android:textColor="#6246EA"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:translationX="-125dp"
-            android:translationY="30dp"
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="154dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginLeft="124dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginRight="124dp"
-
-        android:layout_marginBottom="100dp"
-        android:background="@color/light_purple"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="1.0">
-        >
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="107dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="18dp"
-            android:layout_marginBottom="15dp"
-            android:text="Edit Study Plan"
-            android:textColor="#4E4A64"
-            android:textSize="14dp"
-            android:textStyle="bold"
-
-
-            />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-155dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="20dp"
-            android:orientation="vertical"
-            app:layout_constraintStart_toEndOf="@+id/textView4">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:gravity="center_vertical"
-                android:src="@android:drawable/ic_input_add"
-                android:tint="@color/lavendar"
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="410dp"
-        android:layout_height="80dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="649dp" >
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="41dp"
-            android:layout_height="36dp"
-            android:background="@color/purple_500"
-            android:src="@drawable/ic_home_black_24dp"
-            android:tint="@color/white" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
-</LinearLayout>
-
-
-    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

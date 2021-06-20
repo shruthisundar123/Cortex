@@ -6,69 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.notifications.PeersFragment">
 
-
-
-    <!--
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="76dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            android:gravity="center_horizontal"
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:drawableLeft="@drawable/ic_notifications_black_24dp"
-                android:gravity="left|center_vertical"
-                android:text="First Button">
-
-            </Button>
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_marginTop="30dp"
-                android:drawableLeft="@drawable/ic_dashboard_black_24dp"
-                android:gravity="left|center_vertical"
-                android:text="Second Button" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_marginTop="30dp"
-                android:drawableLeft="@drawable/ic_dashboard_black_24dp"
-                android:gravity="left|center_vertical"
-                android:text="Third Button" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_marginTop="30dp"
-                android:drawableLeft="@drawable/ic_dashboard_black_24dp"
-                android:gravity="left|center_vertical"
-                android:text="Fourth Button"
-                android:textColor="@color/black"
-                app:backgroundTint="@color/white" />
-
-        </LinearLayout>
-
-    </ScrollView> -->
-
     <ScrollView
         android:layout_width="347dp"
         android:layout_height="550dp"

@@ -3,13 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/peerInfo">
-
-    <fragment
-        android:id="@+id/peerInfo"
-        android:name="com.example.productivitybot.ui.notifications.PeerInfo"
-        android:label="peer_info_fragment"
-        tools:layout="@layout/peer_info_fragment" />
+    app:startDestination="@id/peersFragment">
     <fragment
         android:id="@+id/peersFragment"
         android:name="com.example.productivitybot.ui.notifications.PeersFragment"
@@ -19,4 +13,9 @@
             android:id="@+id/action_peersFragment_to_peerInfo"
             app:destination="@id/peerInfo" />
     </fragment>
+    <fragment
+        android:id="@+id/peerInfo"
+        android:name="com.example.productivitybot.ui.notifications.PeerInfo"
+        android:label="peer_info_fragment"
+        tools:layout="@layout/peer_info_fragment" />
 </navigation>
