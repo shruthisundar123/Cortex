@@ -1,4 +1,6 @@
-Meet Cortex: your second brain. Stay organized by automatically creating a personalized schedule for your assignments. Challenge your peers to finish tasks and collect items for your shared space. This project was created for the Hydrangea Hacks hackathon. It is currently an incomplete project, as it was created in 2 days. 
+Meet Cortex: your second brain. Stay organized by automatically creating a personalized schedule for your assignments. Challenge your peers to finish tasks and collect items for your shared space. 
+
+This project was created for the Hydrangea Hacks hackathon. It is currently an incomplete project, as it was created in 2 days. 
 
 
 # Inspiration
